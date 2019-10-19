@@ -1,0 +1,68 @@
+﻿<Window x:Name="formFormulario" x:Class="Entorno_visual.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Entorno_visual"
+        mc:Ignorable="d"
+        Title="Window2" Height="561.34" Width="581.43" ScrollViewer.CanContentScroll="True">
+    <Grid Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Image Source="backgroundForm.PNG" Stretch="Fill"/>
+        <Label Content="Full name" HorizontalAlignment="Left" Margin="31,63,0,0" VerticalAlignment="Top" Width="160" Height="26" Foreground="White"/>
+        <Label Content="Do you control the rights to your music?" HorizontalAlignment="Left" Margin="317,63,0,0" VerticalAlignment="Top" Width="236" Height="26" Foreground="White"/>
+        <Label Content="Would you like to transfer existing catalog&#xD;&#xA;to Synergy, so everything is in one place?" HorizontalAlignment="Left" Margin="317,126,-7,0" VerticalAlignment="Top" Width="272" Height="46" Grid.ColumnSpan="2" Foreground="White"/>
+        <Label Content="Are you currently using a distributor? " HorizontalAlignment="Left" Margin="317,217,0,0" VerticalAlignment="Top" Width="216" Height="26" Foreground="White"/>
+        <Label Content="Primary Genre" HorizontalAlignment="Left" Margin="317,280,0,0" VerticalAlignment="Top" Width="160" Height="26" Foreground="White"/>
+        <Label Content="Have you applied with us before?" HorizontalAlignment="Left" Margin="317,348,0,0" VerticalAlignment="Top" Width="216" Height="26" Foreground="White"/>
+        <Label Content="Select your country of residence" HorizontalAlignment="Left" Margin="27,280,0,0" VerticalAlignment="Top" Width="183" Height="26" Foreground="White"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="29,137,0,0" VerticalAlignment="Top" Width="160" Height="26" Foreground="White"/>
+        <Label Content="Adress" HorizontalAlignment="Left" Margin="29,205,0,0" VerticalAlignment="Top" Width="160" Height="26" Foreground="White"/>
+        <Button Content="Send" HorizontalAlignment="Left" Height="38" Margin="247,471,0,0" VerticalAlignment="Top" Width="93" Click="Button_Click" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484"/>
+        <Label Content="PLEASE FILL THIS FORM WITH YOUR INFORMATION" HorizontalAlignment="Left" Height="45" Margin="78,22,0,0" VerticalAlignment="Top" Width="429" FontFamily="Trebuchet MS" Foreground="White" FontSize="18"/>
+        <CheckBox x:Name="terms_CheckBox" Content="I agree with the terms and data policy " HorizontalAlignment="Left" Margin="180,443,0,0" VerticalAlignment="Top" Width="235" Height="15" Foreground="White" />
+        <TextBox x:Name="FirstName_TextBox" HorizontalAlignment="Left" Height="23" Margin="31,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="Email_TextBox" HorizontalAlignment="Left" Height="23" Margin="31,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Adress_TextBox" HorizontalAlignment="Left" Height="23" Margin="31,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="Country_Combo" HorizontalAlignment="Left" Margin="31,314,0,0" VerticalAlignment="Top" Width="120" Height="22" />
+        <ComboBox x:Name="appliedbefore_Combo" HorizontalAlignment="Left" Margin="330,383,0,0" VerticalAlignment="Top" Width="120" Height="22">
+            <ComboBoxItem Content="Yes" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="No" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ComboBox x:Name="Genre_Combo" HorizontalAlignment="Left" Margin="330,314,0,0" VerticalAlignment="Top" Width="120" Height="22">
+            <ComboBoxItem Content="Alternative" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Electronic" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Rock" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Pop" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Jazz" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Country" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Classic" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Hip-Hop/Rap" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="R and B/Soul" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Soundtrack" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Latin" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Reggae" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ComboBox x:Name="distributor_Combo" HorizontalAlignment="Left" Margin="330,250,0,0" VerticalAlignment="Top" Width="120" Height="22">
+            <ComboBoxItem Content="Yes" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="No" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ComboBox x:Name="Transfer_Combo" HorizontalAlignment="Left" Margin="330,190,0,0" VerticalAlignment="Top" Width="120" Height="22">
+            <ComboBoxItem Content="Yes" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="No" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ComboBox x:Name="Rights_Combo" HorizontalAlignment="Left" Margin="330,91,0,0" VerticalAlignment="Top" Width="120" Height="22">
+            <ComboBoxItem Content="Yes" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="No" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Label Content="Key info about you or your band (Social Networks)&#xD;&#xA;" HorizontalAlignment="Left" Margin="27,348,0,0" VerticalAlignment="Top" Width="277" Height="26" Foreground="White"/>
+        <TextBox x:Name="KeyInfo_TextBox" HorizontalAlignment="Left" Height="39" Margin="31,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="264" />
+        <Button x:Name="Button_exit3" Content="Exit" HorizontalAlignment="Left" Margin="478,476,0,0" VerticalAlignment="Top" Width="75" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" Height="30" Click="Button_exit3_Click"/>
+        <Button x:Name="Button_backtomain2" Content="Go Back" HorizontalAlignment="Left" Margin="30,476,0,0" VerticalAlignment="Top" Width="75" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" Height="30" Click="Button_backtomain2_Click"/>
+
+
+    </Grid>
+</Window>

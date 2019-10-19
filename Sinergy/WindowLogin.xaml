@@ -1,0 +1,24 @@
+﻿<Window x:Name="formLogin" x:Class="Entorno_visual.WindowLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Entorno_visual"
+        mc:Ignorable="d"
+        Title="WindowLogin" Height="234.221" Width="370.065">
+
+    <Grid Margin="0,0,0,0">
+        <Image Source="backgroundLogin.PNG" Stretch="Fill"/>
+        <Label x:Name="Username" Content="Username:" Margin="19,36,264,0" VerticalAlignment="Top" Height="29" RenderTransformOrigin="-0.028,0.579" FontFamily="Trebuchet MS" Foreground="White" FontSize="13"/>
+        <TextBox x:Name="UsernameBox" Height="23" Margin="111,39,135,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label x:Name="Password" Content="Password:" Margin="19,88,264,0" VerticalAlignment="Top" Height="29" FontFamily="Trebuchet MS" Foreground="White" FontSize="13"/>
+        <Button x:Name="Button_Login_validation" Content="Login" Margin="128,137,153,0" VerticalAlignment="Top" Click="Button_Login_validation_Click" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" Height="25"/>
+        <Label x:Name="Label_if_incorrecto" Content="Usuario o Contraseña incorrecto" HorizontalAlignment="Left" Height="24" Margin="86,167,0,0" VerticalAlignment="Top" Width="183" Foreground="#FFEA1F1F" Visibility="Hidden"/>
+        <Button Content="Go back" HorizontalAlignment="Left" Margin="19,167,0,0" VerticalAlignment="Top" Width="62" Click="Button_Click_1" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" Height="26"/>
+        <Button Content="Exit" HorizontalAlignment="Left" Margin="291,167,0,0" VerticalAlignment="Top" Width="59" Click="Button_Click" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" Height="26"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="111,88,0,0" VerticalAlignment="Top" Width="116" Height="23"/>
+
+
+
+    </Grid>
+</Window>
