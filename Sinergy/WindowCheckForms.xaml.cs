@@ -104,5 +104,19 @@ namespace Entorno_visual
             */
 
         }
+
+        private void ButtonExit5_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
+
+        private void Button_backtomain2_Click(object sender, RoutedEventArgs e)
+        {
+            WindowAdmin admin = new WindowAdmin();
+            this.Close();
+            admin.ShowDialog();
+            this.Show();
+            CheckForms.Close();
+        }
     }
 }
