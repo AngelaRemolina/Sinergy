@@ -28,3 +28,34 @@ C:\Users\Duvan Diaz\Desktop\CARRERA\Segundo semestre\Programación 1\NewSinergy\
 C:\Users\Duvan Diaz\Desktop\CARRERA\Segundo semestre\Programación 1\NewSinergy\Sinergy\obj\Debug\Sinergy.csproj.GenerateResource.cache
 C:\Users\Duvan Diaz\Desktop\CARRERA\Segundo semestre\Programación 1\NewSinergy\Sinergy\obj\Debug\Sinergy.exe
 C:\Users\Duvan Diaz\Desktop\CARRERA\Segundo semestre\Programación 1\NewSinergy\Sinergy\obj\Debug\Sinergy.pdb
+C:\Users\000401676\Desktop\Sinergy\Sinergy\bin\Debug\Sinergy.exe.config
+C:\Users\000401676\Desktop\Sinergy\Sinergy\bin\Debug\Sinergy.exe
+C:\Users\000401676\Desktop\Sinergy\Sinergy\bin\Debug\Sinergy.pdb
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\Sinergy.csprojAssemblyReference.cache
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\MainWindow.g.cs
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\Window2.g.cs
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\Window3_1.g.cs
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\WindowAdmin.g.cs
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\WindowCheckForms.g.cs
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\WindowCreateUser.g.cs
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\WindowLogin.g.cs
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\WindowStatus.g.cs
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\WindowUpload.g.cs
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\App.g.cs
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\Sinergy_MarkupCompile.cache
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\Sinergy_MarkupCompile.lref
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\MainWindow.baml
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\Window2.baml
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\Window3_1.baml
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\WindowAdmin.baml
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\WindowCheckForms.baml
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\WindowCreateUser.baml
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\WindowLogin.baml
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\WindowStatus.baml
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\WindowUpload.baml
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\Sinergy.g.resources
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\Sinergy.Properties.Resources.resources
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\Sinergy.csproj.GenerateResource.cache
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\Sinergy.csproj.CoreCompileInputs.cache
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\Sinergy.exe
+C:\Users\000401676\Desktop\Sinergy\Sinergy\obj\Debug\Sinergy.pdb

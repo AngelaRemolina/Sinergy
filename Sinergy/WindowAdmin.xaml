@@ -7,14 +7,18 @@
         mc:Ignorable="d"
         Title="WindowAdmin" Height="264.5" Width="423">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="45*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Image Grid.RowSpan="2" Source="backgroundAdmin.jpg" Stretch="Fill"/>
-        <Button x:Name="ButtonExit5" Content="Exit" HorizontalAlignment="Left" Margin="312,176,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" FontSize="13" Height="26" Click="ButtonExit5_Click"/>
+        <Image Grid.RowSpan="2" Source="backgroundAdmin.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Button x:Name="ButtonExit5" Content="Exit" HorizontalAlignment="Left" Margin="121.987,176,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" FontSize="13" Height="26" Click="ButtonExit5_Click" Grid.Column="1"/>
         <Button x:Name="Button_SignOut" Content="Sign out" HorizontalAlignment="Left" Margin="47,176,0,0" VerticalAlignment="Top" Width="92" Click="Button_SignOut_Click" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" FontSize="13" Height="26" Grid.Row="1"/>
-        <Button x:Name="Button_CheckForms" Content="Check Forms" HorizontalAlignment="Left" Margin="152,85,0,0" VerticalAlignment="Top" Width="111" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" FontSize="13" Click="Button_CheckForms_Click" Height="36" Grid.Row="1"/>
+        <Button x:Name="Button_CheckForms" Content="Check Forms" HorizontalAlignment="Left" Margin="152,85,0,0" VerticalAlignment="Top" Width="111" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" FontSize="13" Click="Button_CheckForms_Click" Height="36" Grid.Row="1" Grid.ColumnSpan="2"/>
 
 
 

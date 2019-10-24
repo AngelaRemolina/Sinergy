@@ -26,7 +26,16 @@ namespace Entorno_visual
 
         private void back_button_Click(object sender, RoutedEventArgs e)
         {
+            Window3_1 dashboard = new Window3_1();
+            this.Close();
+            dashboard.ShowDialog();
+            this.Show();
+            Upload.Close();
+        }
 
+        private void Exit_button_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown(); //Cerrar la app
         }
     }
 }
