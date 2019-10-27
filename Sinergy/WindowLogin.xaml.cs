@@ -92,6 +92,10 @@ namespace Entorno_visual
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            MainWindow main = new MainWindow();
+            this.Close();
+            main.ShowDialog();
+            this.Show();
             formLogin.Close();
         }
     }

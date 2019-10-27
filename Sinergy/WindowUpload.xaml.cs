@@ -37,5 +37,7 @@ namespace Entorno_visual
         {
             System.Windows.Application.Current.Shutdown(); //Cerrar la app
         }
+
+
     }
 }

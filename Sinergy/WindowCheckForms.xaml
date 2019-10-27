@@ -1,11 +1,11 @@
-﻿<Window x:Class="Entorno_visual.WindowCheckForms"
+﻿<Window x:Name="checkforms" x:Class="Entorno_visual.WindowCheckForms"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Entorno_visual"
         mc:Ignorable="d"
-        Title="WindowCheckForms" Height="384.66" Width="575.773">
+        Title="Check Forms" Height="384.66" Width="575.773">
     <Grid>
         <Image Source="backgroundCheckForms.jpg" Stretch="Fill"/>
         <ListBox x:Name="ListBoxForms" HorizontalAlignment="Left" Height="268" Margin="10,76,0,0" VerticalAlignment="Top" Width="134" SelectionChanged="ListBoxForms_SelectionChanged"/>
@@ -35,6 +35,7 @@
         <Label Content="Accept" HorizontalAlignment="Left" Margin="211,321,0,0" VerticalAlignment="Top" Foreground="#FF013408" FontFamily="Gadugi" FontWeight="Bold"/>
         <Label Content="Deny" HorizontalAlignment="Left" Margin="382,321,0,0" VerticalAlignment="Top" Foreground="#FFA82A1D" FontWeight="Bold" FontFamily="Gadugi"/>
         <Label Content="Check the interviews from our appliers" HorizontalAlignment="Left" Margin="90,7,0,0" VerticalAlignment="Top" Foreground="White" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Semibold"/>
+        <Button x:Name="back_button" Content="🡨" HorizontalAlignment="Left" Margin="25,18,0,0" VerticalAlignment="Top" Width="20" Click="back_button_Click"/>
 
 
     </Grid>

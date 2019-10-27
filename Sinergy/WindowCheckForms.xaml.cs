@@ -102,5 +102,14 @@ namespace Entorno_visual
             }
 
         }
+
+        private void back_button_Click(object sender, RoutedEventArgs e)
+        {
+            WindowAdmin admin = new WindowAdmin();
+            this.Close();
+            admin.ShowDialog();
+            this.Show();
+            checkforms.Close();
+        }
     }
 }
