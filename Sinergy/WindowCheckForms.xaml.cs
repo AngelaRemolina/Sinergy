@@ -78,8 +78,8 @@ namespace Entorno_visual
 
         private void Button_Accepted_Click(object sender, RoutedEventArgs e)
         {
+            
             //Crear usuario aprobado
-
             WindowCreateUser windowsCreateUser = new WindowCreateUser();
             windowsCreateUser.ShowDialog();
         }
@@ -88,20 +88,18 @@ namespace Entorno_visual
         {
             //agregar a un nuevo archivo txt que se cargará al check status
             String msg2 = "Sorry you were not accepted";
+
             foreach (string l in formularios) //l es cada formulario
             {
-                string formNum = l.Split(';')[0]; //este es el numero del formulario
-                StreamWriter sd = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Check Status.txt", append: true);
-                sd.WriteLine(formNum + ";" + msg2);
-                sd.Close();
+                if(ListBoxForms.SelectedItem.Equals(l.Split(';')[0]))
+                {
+                    string formNum = l.Split(';')[0]; //este es el numero del formulario
+                    StreamWriter sd = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Check Status.txt", append: true);
+                    sd.WriteLine(formNum + ";" + msg2);
+                    sd.Close();
+                    continue;
+                }
             }
-
-            //eliminar formulario
-            /*
-             * TO FIX
-            var tempfile = System.IO.Path.GetTempFileName();
-            var linestokeep = File.ReadLines("\\formularios.txt").Where(l => l != ListBoxForms.SelectedItem.ToString());
-            */
 
         }
     }

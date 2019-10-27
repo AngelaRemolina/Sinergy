@@ -19,7 +19,7 @@
         <TextBox x:Name="country_Textbox" HorizontalAlignment="Left" Height="23" Margin="169,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Key Information" HorizontalAlignment="Left" Margin="169,264,0,0" VerticalAlignment="Top" Width="95" Foreground="White"/>
         <TextBox x:Name="keyInfo_textbox" HorizontalAlignment="Left" Height="23" Margin="169,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button_Accepted" Content="✔" HorizontalAlignment="Left" Margin="261,322,0,0" VerticalAlignment="Top" Width="27" Height="25" Foreground="#FF197010" Click="Button_Accepted_Click" />
+        <Button x:Name="button_Accepted" Content="✔" HorizontalAlignment="Left" Margin="261,322,0,7" Width="27" Foreground="#FF197010" Click="Button_Accepted_Click" />
         <Button x:Name="button_NotAccepted"  Content="X" HorizontalAlignment="Left" Margin="422,322,0,0" VerticalAlignment="Top" Width="27" Height="25" Foreground="Red" FontWeight="Bold" FontSize="13" Click="Button_NotAccepted_Click" />
         <TextBox x:Name="rights_textbox" HorizontalAlignment="Left" Height="23" Margin="329,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="transfer_textbox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="329,136,0,0"/>
