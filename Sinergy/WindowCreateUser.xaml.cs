@@ -54,15 +54,21 @@ namespace Entorno_visual
 
                 //agregar a un nuevo archivo txt que se cargará al check status
 
-                String msg1 = "Congrats! you have been accepted.\nThis is your username and password:\n";
-                String userandpass = "Username: " + CreateUser_textbox.Text + "\nPassword: " + CreatePassword_textbox.Text;
+                String msg1 = "Congrats! you have been accepted. This is your username and password: ";
+                String user = "Username: " + CreateUser_textbox.Text;
+                String pass = "Password: " + CreatePassword_textbox.Text;
                 foreach (string l in formularios) //l es cada formulario
                 {
-                    string formNum = l.Split(';')[0]; //este es el numero del formulario
-                    StreamWriter sd = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Check Status.txt", append: true);
-                    sd.WriteLine(formNum.ToString() + ";" + msg1 + ";" + userandpass);
-                    sd.Close();
+                    if (code_textbox.Text.Equals(l.Split(';')[0]))
+                    {
+                        string formNum = l.Split(';')[0]; //este es el numero del formulario
+                        StreamWriter sd = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Check Status.txt", append: true);
+                        sd.WriteLine(formNum.ToString() + ";" + msg1 + ";" + user + ";" + pass);
+                        sd.Close();
+                    }
                 }
+
+                this.Close();
             }
             catch (Exception)
             {

@@ -13,7 +13,7 @@
         <TextBox x:Name="UsernameBox" Height="23" Margin="111,39,135,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <Label x:Name="Password" Content="Password:" Margin="19,88,264,0" VerticalAlignment="Top" Height="29" FontFamily="Trebuchet MS" Foreground="White" FontSize="13"/>
         <Button x:Name="Button_Login_validation" Content="Login" Margin="128,137,153,0" VerticalAlignment="Top" Click="Button_Login_validation_Click" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" Height="25"/>
-        <Label x:Name="Label_if_incorrecto" Content="Usuario o Contraseña incorrecto" HorizontalAlignment="Left" Height="24" Margin="86,167,0,0" VerticalAlignment="Top" Width="183" Foreground="#FFEA1F1F" Visibility="Hidden"/>
+        <Label x:Name="Label_if_incorrecto" Content="User or password is incorrect" HorizontalAlignment="Left" Height="24" Margin="86,167,0,0" VerticalAlignment="Top" Width="183" Foreground="#FFEA1F1F" Visibility="Hidden"/>
         <Button Content="Go back" HorizontalAlignment="Left" Margin="19,167,0,0" VerticalAlignment="Top" Width="62" Click="Button_Click_1" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" Height="26"/>
         <Button Content="Exit" HorizontalAlignment="Left" Margin="291,167,0,0" VerticalAlignment="Top" Width="59" Click="Button_Click" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" Height="26"/>
         <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="111,88,0,0" VerticalAlignment="Top" Width="116" Height="23"/>

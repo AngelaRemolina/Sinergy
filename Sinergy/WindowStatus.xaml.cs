@@ -38,30 +38,36 @@ namespace Entorno_visual
             loadForms();
         }
 
-        List<String> status = new List<String>();
+        
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            List<String> status = new List<String>();
             StreamReader statusReader = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\Check Status.txt", Encoding.UTF8);
             string x;
             while ((x = statusReader.ReadLine()) != null)
             {
                 status.Add(x); //agregar el txt a la lista de estados
             }
-            
-            foreach(string stat in status)
+
+
+            int cont = 0;
+            foreach (string stat in status)
             {
                 if (StatusCode_TextBox.Text.Equals(stat.Split(';')[0])) 
                 {
-                    MessageBox.Show(stat); //dudas
+                    MessageBox.Show(stat.Split(';')[1]+ "\n"+ stat.Split(';')[2] + "\n"+ stat.Split(';')[3]);
                 }
                 else
                 {
-                    MessageBox.Show("We haven't checked your application yet");
+                    cont++;
                 }
             }
-            
-            
+
+            if (status.Count() == cont)
+            {
+                MessageBox.Show("We haven't checked your application yet.\nPlease check again in a couple of days");
+            }
         }
 
         private void Button_Exit2_Click(object sender, RoutedEventArgs e)
