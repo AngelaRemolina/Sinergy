@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Entorno_visual"
         mc:Ignorable="d"
-        Title="WindowCreateUser" Height="304.762" Width="418.381">
+        Title="Create User" Height="304.762" Width="418.381">
     <Grid>
-        <Image Source="backgroundCreateUser.jpg" Stretch="Fill"/>
+        <Image  Source="backgroundCreateUser.jpg" Stretch="Fill"/>
         <Label Content="Username" HorizontalAlignment="Left" Margin="136,13,0,0" VerticalAlignment="Top" Width="118" Foreground="White" FontSize="16"/>
         <TextBox x:Name="CreateUser_textbox" HorizontalAlignment="Left" Height="23" Margin="136,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Password" HorizontalAlignment="Left" Margin="136,81,0,0" VerticalAlignment="Top" Width="118" Foreground="#FFFFEFEF" FontSize="16"/>
@@ -15,6 +15,7 @@
         <Button Content="Create" HorizontalAlignment="Left" Margin="145,225,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click" RenderTransformOrigin="0.581,1.25" Height="26"/>
         <TextBox x:Name="code_textbox" HorizontalAlignment="Left" Height="23" Margin="136,186,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Form code" HorizontalAlignment="Left" Margin="137,153,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,0.115" Width="118" Foreground="White" FontSize="16"/>
+
 
     </Grid>
 </Window>
