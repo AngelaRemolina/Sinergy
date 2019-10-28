@@ -180,5 +180,8 @@
   <ItemGroup>
     <Resource Include="backgroundCreateUser.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="backgroundDashboard.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

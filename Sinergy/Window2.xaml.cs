@@ -83,12 +83,11 @@ namespace Entorno_visual
                 }
                 finally
                 {
-                    FirstName_TextBox.Text = "";
-                    Email_TextBox.Text = "";
-                    Adress_TextBox.Text = "";
-                    KeyInfo_TextBox.Text = "";
-                    terms_CheckBox.IsChecked = false;
-                    //por vaciar todas las secciones o mejor cerrar la ventana
+                    MainWindow main = new MainWindow();
+                    this.Close();
+                    main.ShowDialog();
+                    this.Show();
+                    formFormulario.Close();
                 }
             }
         }
