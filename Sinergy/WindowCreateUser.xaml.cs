@@ -42,38 +42,46 @@ namespace Entorno_visual
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Usuarios nuevoUsuario = new Usuarios(CreateUser_textbox.Text, CreatePassword_textbox.Text);
-            
-            try
+            if((string.IsNullOrWhiteSpace(CreateUser_textbox.Text))||(string.IsNullOrWhiteSpace(CreatePassword_textbox.Text))|| (string.IsNullOrWhiteSpace(code_textbox.Text)))
             {
-                StreamWriter sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Users.txt", append: true);
-                sw.WriteLine(nuevoUsuario.ToString());
-                sw.Close();
-                MessageBox.Show("The user has been created successfully " + nuevoUsuario.ToString());
+                MessageBox.Show("Don't leave empty boxes");
+            }
+            else
+            {
+                Usuarios nuevoUsuario = new Usuarios(CreateUser_textbox.Text, CreatePassword_textbox.Text);
 
-
-                //agregar a un nuevo archivo txt que se cargará al check status
-
-                String msg1 = "Congrats! you have been accepted. This is your username and password: ";
-                String user = "Username: " + CreateUser_textbox.Text;
-                String pass = "Password: " + CreatePassword_textbox.Text;
-                foreach (string l in formularios) //l es cada formulario
+                try
                 {
-                    if (code_textbox.Text.Equals(l.Split(';')[0]))
-                    {
-                        string formNum = l.Split(';')[0]; //este es el numero del formulario
-                        StreamWriter sd = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Check Status.txt", append: true);
-                        sd.WriteLine(formNum.ToString() + ";" + msg1 + ";" + user + ";" + pass);
-                        sd.Close();
-                    }
-                }
+                    StreamWriter sw = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Users.txt", append: true);
+                    sw.WriteLine(nuevoUsuario.ToString());
+                    sw.Close();
+                    MessageBox.Show("The user has been created successfully " + nuevoUsuario.ToString());
 
-                this.Close();
+
+                    //agregar a un nuevo archivo txt que se cargará al check status
+
+                    String msg1 = "Congrats! you have been accepted. This is your username and password: ";
+                    String user = "Username: " + CreateUser_textbox.Text;
+                    String pass = "Password: " + CreatePassword_textbox.Text;
+                    foreach (string l in formularios) //l es cada formulario
+                    {
+                        if (code_textbox.Text.Equals(l.Split(';')[0]))
+                        {
+                            string formNum = l.Split(';')[0]; //este es el numero del formulario
+                            StreamWriter sd = new StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "\\Check Status.txt", append: true);
+                            sd.WriteLine(formNum.ToString() + ";" + msg1 + ";" + user + ";" + pass);
+                            sd.Close();
+                        }
+                    }
+
+                    this.Close();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("An unexpected error ocurred");
+                }
             }
-            catch (Exception)
-            {
-                MessageBox.Show("An unexpected error ocurred");
-            }
+           
             
         }
     }

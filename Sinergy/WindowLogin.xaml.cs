@@ -41,7 +41,7 @@ namespace Entorno_visual
 
             if (string.IsNullOrWhiteSpace(PasswordBox.Password) || string.IsNullOrWhiteSpace(UsernameBox.Text))
             {
-                MessageBox.Show("No deje espacios en blanco");
+                MessageBox.Show("Don't leave empty boxes");
             }
             if (UsernameBox.Text.Equals("Admin") && PasswordBox.Password.Equals("*sinergy#"))
             {
@@ -98,5 +98,7 @@ namespace Entorno_visual
             this.Show();
             formLogin.Close();
         }
+
+
     }
 }
