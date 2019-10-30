@@ -54,12 +54,19 @@ namespace Entorno_visual
             {
                 MessageBox.Show("You must agree with the terms and data policy ");
             }
+            
+            if (Email_TextBox.Text.Length>=1 && !Email_TextBox.Text.Contains('@'))
+            {
+                MessageBox.Show("Invalid email");
+            }
+            
 
             if (!string.IsNullOrWhiteSpace(FirstName_TextBox.Text) && !string.IsNullOrWhiteSpace(Email_TextBox.Text)
                 && !string.IsNullOrWhiteSpace(Adress_TextBox.Text) && !string.IsNullOrWhiteSpace(KeyInfo_TextBox.Text) &&
                 (bool)terms_CheckBox.IsChecked && !string.IsNullOrEmpty(Country_Combo.Text) && !string.IsNullOrEmpty(Rights_Combo.Text)
                 && !string.IsNullOrEmpty(Transfer_Combo.Text) && !string.IsNullOrEmpty(distributor_Combo.Text)
-                && !string.IsNullOrEmpty(Genre_Combo.Text) && !string.IsNullOrEmpty(appliedbefore_Combo.Text))
+                && !string.IsNullOrEmpty(Genre_Combo.Text) && !string.IsNullOrEmpty(appliedbefore_Combo.Text) 
+                && Email_TextBox.Text.Contains('@') )
             {
 
 
@@ -101,7 +108,6 @@ namespace Entorno_visual
         {
             System.Windows.Application.Current.Shutdown();
         }
-
 
     }
 }

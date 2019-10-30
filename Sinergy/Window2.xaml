@@ -12,7 +12,7 @@
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
         <Image Source="backgroundForm.PNG" Stretch="Fill"/>
-        <Label Content="Full name" HorizontalAlignment="Left" Margin="31,63,0,0" VerticalAlignment="Top" Width="160" Height="26" Foreground="White"/>
+        <Label Content="Artist name" HorizontalAlignment="Left" Margin="31,63,0,0" VerticalAlignment="Top" Width="160" Height="26" Foreground="White"/>
         <Label Content="Do you control the rights to your music?" HorizontalAlignment="Left" Margin="317,63,0,0" VerticalAlignment="Top" Width="236" Height="26" Foreground="White"/>
         <Label Content="Would you like to transfer existing catalog&#xD;&#xA;to Synergy, so everything is in one place?" HorizontalAlignment="Left" Margin="317,126,-7,0" VerticalAlignment="Top" Width="272" Height="46" Grid.ColumnSpan="2" Foreground="White"/>
         <Label Content="Are you currently using a distributor? " HorizontalAlignment="Left" Margin="317,217,0,0" VerticalAlignment="Top" Width="216" Height="26" Foreground="White"/>
@@ -24,7 +24,7 @@
         <Label Content="Key info about you or your band (Social Networks)&#xD;&#xA;" HorizontalAlignment="Left" Margin="27,348,0,0" VerticalAlignment="Top" Width="277" Height="26" Foreground="White"/>
         <Label Content="PLEASE FILL THIS FORM WITH YOUR INFORMATION" HorizontalAlignment="Left" Height="45" Margin="78,22,0,0" VerticalAlignment="Top" Width="429" FontFamily="Trebuchet MS" Foreground="White" FontSize="18"/>
         <TextBox x:Name="FirstName_TextBox" HorizontalAlignment="Left" Height="23" Margin="31,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="Email_TextBox" HorizontalAlignment="Left" Height="23" Margin="31,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Email_TextBox" HorizontalAlignment="Left" Height="23" Margin="31,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
         <TextBox x:Name="Adress_TextBox" HorizontalAlignment="Left" Height="23" Margin="31,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="Country_Combo" HorizontalAlignment="Left" Margin="31,314,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
         <TextBox x:Name="KeyInfo_TextBox" HorizontalAlignment="Left" Height="39" Margin="31,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="264" />

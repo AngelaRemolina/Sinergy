@@ -27,15 +27,6 @@ namespace Entorno_visual
         public WindowUpload()
         {
             InitializeComponent();
-            foreach (CultureInfo culture in cultures)
-            {
-                region = new RegionInfo(culture.LCID);
-                if (!(cultureList.Contains(region.EnglishName)))
-                {
-                    cultureList.Add(region.EnglishName);
-                    Country_Combo.Items.Add(region.EnglishName);
-                }
-            }
         }
 
         private void back_button_Click(object sender, RoutedEventArgs e)
@@ -54,7 +45,31 @@ namespace Entorno_visual
 
         private void submit_button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Error 404");
+            MessageBox.Show("Your release will be done when youe requested it");
+        }
+
+        private void All_checkBox_Checked(object sender, RoutedEventArgs e)
+        {
+            if ((bool)all_checkBox.IsChecked)
+            {
+                cb1.IsChecked = true;
+                cb2.IsChecked = true;
+                cb3.IsChecked = true;
+                cb4.IsChecked = true;
+                cb5.IsChecked = true;
+                cb6.IsChecked = true;
+                cb7.IsChecked = true;
+            }
+            if (!(bool)all_checkBox.IsChecked)
+            {
+                cb1.IsChecked = false;
+                cb2.IsChecked = false;
+                cb3.IsChecked = false;
+                cb4.IsChecked = false;
+                cb5.IsChecked = false;
+                cb6.IsChecked = false;
+                cb7.IsChecked = false;
+            }
         }
     }
 }

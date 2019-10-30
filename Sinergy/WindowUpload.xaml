@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Entorno_visual"
         mc:Ignorable="d"
-        Title="Upload Your Content" Height="495.056" Width="883.722">
+        Title="Upload Your Content" Height="478.056" Width="847.722">
     <Grid>
         <Grid.ColumnDefinitions>
 
@@ -13,13 +13,13 @@
 
         </Grid.ColumnDefinitions>
         <Image Source="backgroundUpload.jpg" Stretch="Fill"/>
-        <Button x:Name="back_button" Content="Go Back" HorizontalAlignment="Left" Margin="33,417,0,0" VerticalAlignment="Top" Width="102" Click="back_button_Click" Height="28"/>
-        <Button x:Name="exit_button" Content="Exit" HorizontalAlignment="Left" Margin="744,417,0,0" VerticalAlignment="Top" Width="102" Click="Exit_button_Click" Height="28"/>
+        <Button x:Name="back_button" Content="Go Back" HorizontalAlignment="Left" Margin="33,389,0,0" VerticalAlignment="Top" Width="102" Click="back_button_Click" Height="28"/>
+        <Button x:Name="exit_button" Content="Exit" HorizontalAlignment="Left" Margin="702,389,0,0" VerticalAlignment="Top" Width="102" Click="Exit_button_Click" Height="28"/>
         <Label Content="Release name:" HorizontalAlignment="Left" Margin="33,117,0,0" VerticalAlignment="Top" Width="150" Foreground="White" Height="31" FontSize="13"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="33,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
         <Label Content="Artist Name" HorizontalAlignment="Left" Margin="33,171,0,0" VerticalAlignment="Top" Height="27" Width="150" FontSize="13" Foreground="White"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="33,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
-        <Label Content="Gnere" HorizontalAlignment="Left" Margin="33,226,0,0" VerticalAlignment="Top" Height="34" Width="150" FontSize="13" Foreground="White"/>
+        <Label Content="Genere" HorizontalAlignment="Left" Margin="33,226,0,0" VerticalAlignment="Top" Height="34" Width="150" FontSize="13" Foreground="White"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="33,260,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150"/>
         <Label Content="Price category" HorizontalAlignment="Left" Margin="33,288,0,0" VerticalAlignment="Top" Width="150" Height="29" FontSize="13" Foreground="White"/>
         <ComboBox HorizontalAlignment="Left" Margin="33,317,0,0" VerticalAlignment="Top" Width="150" Height="23">
@@ -34,29 +34,22 @@
         <DatePicker HorizontalAlignment="Left" Margin="289,203,0,0" VerticalAlignment="Top" Width="150" Height="24"/>
         <Label Content="Pre-order date" HorizontalAlignment="Left" Margin="289,232,0,0" VerticalAlignment="Top" Width="150" Foreground="White" Height="26"/>
         <DatePicker HorizontalAlignment="Left" Margin="289,258,0,0" VerticalAlignment="Top" Width="150" Height="24"/>
-        <Label Content="STORES &amp; COUNTRIES" HorizontalAlignment="Left" Margin="537,27,0,0" VerticalAlignment="Top" Height="58" Width="307" FontSize="25" Foreground="White" FontWeight="Bold"/>
-        <ComboBox x:Name="Country_Combo" HorizontalAlignment="Left" Margin="597,153,0,0" VerticalAlignment="Top" Width="150" Height="22">
-            <ComboBoxItem Content="All" HorizontalAlignment="Left" Width="118"/>
-        </ComboBox>
-        <Label Content="Countries" HorizontalAlignment="Left" Margin="597,117,0,0" VerticalAlignment="Top" Foreground="White" Width="120" Height="31" FontSize="13"/>
-        <Label Content="Stores" HorizontalAlignment="Left" Margin="597,175,0,0" VerticalAlignment="Top" Width="150" Height="24" Foreground="White" FontSize="13"/>
-        <ComboBox HorizontalAlignment="Left" Margin="597,204,0,0" VerticalAlignment="Top" Width="150" Height="22">
-            <ComboBoxItem Content="All" HorizontalAlignment="Left" Width="148"/>
-            <ComboBoxItem Content="Spotify" HorizontalAlignment="Left" Width="148"/>
-            <ComboBoxItem Content="iTunes" HorizontalAlignment="Left" Width="148"/>
-            <ComboBoxItem Content="YouTube Music" HorizontalAlignment="Left" Width="148"/>
-            <ComboBoxItem Content="YouTube Content ID" HorizontalAlignment="Left" Width="148"/>
-            <ComboBoxItem Content="BeatPort" HorizontalAlignment="Left" Width="148"/>
-            <ComboBoxItem Content="Deezer" HorizontalAlignment="Left" Width="148"/>
-            <ComboBoxItem Content="Yandex" HorizontalAlignment="Left" Width="148"/>
-        </ComboBox>
-        <Label Content="Trype" HorizontalAlignment="Left" Margin="289,288,0,0" VerticalAlignment="Top" Height="29" Width="150" FontSize="13" Foreground="White"/>
+        <Label Content="PLEASE CHOOSE THE&#xD;&#xA; UPLOAD STORES" HorizontalAlignment="Center" Margin="514,27,30,0" VerticalAlignment="Top" Height="76" Width="296" FontSize="25" Foreground="White" FontWeight="Bold"/>
+        <Label Content="Type" HorizontalAlignment="Left" Margin="289,288,0,0" VerticalAlignment="Top" Height="29" Width="150" FontSize="13" Foreground="White"/>
         <ComboBox HorizontalAlignment="Left" Margin="289,317,0,0" VerticalAlignment="Top" Width="150" Height="23">
             <ComboBoxItem Content="Single" HorizontalAlignment="Left" Width="148"/>
             <ComboBoxItem Content="EP" HorizontalAlignment="Left" Width="148"/>
             <ComboBoxItem Content="Album" HorizontalAlignment="Left" Width="148"/>
         </ComboBox>
-        <Button x:Name="submit_button" Content="Submit" HorizontalAlignment="Left" Margin="428,406,0,0" VerticalAlignment="Top" Width="85" Click="submit_button_Click" Height="20"/>
+        <Button x:Name="submit_button" Content="Submit" HorizontalAlignment="Left" Margin="401,389,0,0" VerticalAlignment="Top" Width="85" Click="submit_button_Click" Height="28"/>
+        <CheckBox x:Name="all_checkBox" Content="All" HorizontalAlignment="Left" Margin="594,171,0,0" VerticalAlignment="Top" Foreground="White" Checked="All_checkBox_Checked"/>
+        <CheckBox x:Name="cb1" Content="Spotify" HorizontalAlignment="Left" Margin="594,191,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <CheckBox x:Name="cb2" Content="iTunes" HorizontalAlignment="Left" Margin="594,211,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <CheckBox x:Name="cb3" Content="YouTube Music" HorizontalAlignment="Left" Margin="594,231,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <CheckBox x:Name="cb4" Content="YouTube Content ID" HorizontalAlignment="Left" Margin="594,251,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <CheckBox x:Name="cb5" Content="BeatPort" HorizontalAlignment="Left" Margin="594,271,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <CheckBox x:Name="cb6" Content="Deezer" HorizontalAlignment="Left" Margin="594,291,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <CheckBox x:Name="cb7" Content="Yandex" HorizontalAlignment="Left" Margin="594,313,0,0" VerticalAlignment="Top" Foreground="White"/>
 
 
     </Grid>
