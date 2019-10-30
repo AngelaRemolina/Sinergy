@@ -5,11 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Entorno_visual"
         mc:Ignorable="d"
-        Title="Dashboard" Height="450" Width="710.95">
+        Title="Dashboard" Height="272.727" Width="412.466">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
         <Image Source="backgroundDashboard.jpg" Stretch="Fill"/>
-        <Button x:Name="Sing_Out" Content="Sign Out" HorizontalAlignment="Left" Margin="597,10,0,0" VerticalAlignment="Top" Width="77" Click="Sing_Out_Click" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" Height="31"/>
-        <Button x:Name="Release_Button" Content="Release" HorizontalAlignment="Left" Margin="314,10,0,0" VerticalAlignment="Top" Width="79" Click="Release_Button_Click" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" Height="31"/>
-        <Button x:Name="Button_exit4" Content="Exit" HorizontalAlignment="Left" Margin="599,373,0,0" VerticalAlignment="Top" Width="75" Click="Button_exit4_Click" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" FontSize="13" Height="24"/>
+        <Button x:Name="Sing_Out" Content="Sign Out" HorizontalAlignment="Left" Margin="304,23,0,0" VerticalAlignment="Top" Width="75" Click="Sing_Out_Click" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" Height="24"/>
+        <Button x:Name="Release_Button" Content="Release" HorizontalAlignment="Left" Margin="135,102,0,0" VerticalAlignment="Top" Width="156" Click="Release_Button_Click" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" Height="42"/>
+        <Button x:Name="Button_exit4" Content="Exit" HorizontalAlignment="Left" Margin="304,187,0,0" VerticalAlignment="Top" Width="75" Click="Button_exit4_Click" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" FontSize="13" Height="24"/>
     </Grid>
 </Window>

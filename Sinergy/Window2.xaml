@@ -21,14 +21,22 @@
         <Label Content="Select your country of residence" HorizontalAlignment="Left" Margin="27,280,0,0" VerticalAlignment="Top" Width="183" Height="26" Foreground="White"/>
         <Label Content="Email" HorizontalAlignment="Left" Margin="29,137,0,0" VerticalAlignment="Top" Width="160" Height="26" Foreground="White"/>
         <Label Content="Adress" HorizontalAlignment="Left" Margin="29,205,0,0" VerticalAlignment="Top" Width="160" Height="26" Foreground="White"/>
-        <Button Content="Send" HorizontalAlignment="Left" Height="38" Margin="247,471,0,0" VerticalAlignment="Top" Width="93" Click="Button_Click" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484"/>
+        <Label Content="Key info about you or your band (Social Networks)&#xD;&#xA;" HorizontalAlignment="Left" Margin="27,348,0,0" VerticalAlignment="Top" Width="277" Height="26" Foreground="White"/>
         <Label Content="PLEASE FILL THIS FORM WITH YOUR INFORMATION" HorizontalAlignment="Left" Height="45" Margin="78,22,0,0" VerticalAlignment="Top" Width="429" FontFamily="Trebuchet MS" Foreground="White" FontSize="18"/>
-        <CheckBox x:Name="terms_CheckBox" Content="I agree with the terms and data policy " HorizontalAlignment="Left" Margin="180,443,0,0" VerticalAlignment="Top" Width="235" Height="15" Foreground="White" />
         <TextBox x:Name="FirstName_TextBox" HorizontalAlignment="Left" Height="23" Margin="31,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
         <TextBox x:Name="Email_TextBox" HorizontalAlignment="Left" Height="23" Margin="31,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="Adress_TextBox" HorizontalAlignment="Left" Height="23" Margin="31,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="Country_Combo" HorizontalAlignment="Left" Margin="31,314,0,0" VerticalAlignment="Top" Width="120" Height="22" />
-        <ComboBox x:Name="appliedbefore_Combo" HorizontalAlignment="Left" Margin="330,383,0,0" VerticalAlignment="Top" Width="120" Height="22">
+        <ComboBox x:Name="Country_Combo" HorizontalAlignment="Left" Margin="31,314,0,0" VerticalAlignment="Top" Width="120" Height="22"/>
+        <TextBox x:Name="KeyInfo_TextBox" HorizontalAlignment="Left" Height="39" Margin="31,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="264" />
+        <ComboBox x:Name="Rights_Combo" HorizontalAlignment="Left" Margin="330,91,0,0" VerticalAlignment="Top" Width="120" Height="22">
+            <ComboBoxItem Content="Yes" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="No" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ComboBox x:Name="Transfer_Combo" HorizontalAlignment="Left" Margin="330,190,0,0" VerticalAlignment="Top" Width="120" Height="22">
+            <ComboBoxItem Content="Yes" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="No" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ComboBox x:Name="distributor_Combo" HorizontalAlignment="Left" Margin="330,250,0,0" VerticalAlignment="Top" Width="120" Height="22">
             <ComboBoxItem Content="Yes" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem Content="No" HorizontalAlignment="Left" Width="118"/>
         </ComboBox>
@@ -46,23 +54,13 @@
             <ComboBoxItem Content="Latin" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem Content="Reggae" HorizontalAlignment="Left" Width="118"/>
         </ComboBox>
-        <ComboBox x:Name="distributor_Combo" HorizontalAlignment="Left" Margin="330,250,0,0" VerticalAlignment="Top" Width="120" Height="22">
+        <ComboBox x:Name="appliedbefore_Combo" HorizontalAlignment="Left" Margin="330,383,0,0" VerticalAlignment="Top" Width="120" Height="22">
             <ComboBoxItem Content="Yes" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem Content="No" HorizontalAlignment="Left" Width="118"/>
         </ComboBox>
-        <ComboBox x:Name="Transfer_Combo" HorizontalAlignment="Left" Margin="330,190,0,0" VerticalAlignment="Top" Width="120" Height="22">
-            <ComboBoxItem Content="Yes" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem Content="No" HorizontalAlignment="Left" Width="118"/>
-        </ComboBox>
-        <ComboBox x:Name="Rights_Combo" HorizontalAlignment="Left" Margin="330,91,0,0" VerticalAlignment="Top" Width="120" Height="22">
-            <ComboBoxItem Content="Yes" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem Content="No" HorizontalAlignment="Left" Width="118"/>
-        </ComboBox>
-        <Label Content="Key info about you or your band (Social Networks)&#xD;&#xA;" HorizontalAlignment="Left" Margin="27,348,0,0" VerticalAlignment="Top" Width="277" Height="26" Foreground="White"/>
-        <TextBox x:Name="KeyInfo_TextBox" HorizontalAlignment="Left" Height="39" Margin="31,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="264" />
+        <CheckBox x:Name="terms_CheckBox" Content="I agree with the terms and data policy " HorizontalAlignment="Left" Margin="180,443,0,0" VerticalAlignment="Top" Width="235" Height="15" Foreground="White" />
+        <Button Content="Send" HorizontalAlignment="Left" Height="38" Margin="247,471,0,0" VerticalAlignment="Top" Width="93" Click="Button_Click" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484"/>
         <Button x:Name="Button_exit3" Content="Exit" HorizontalAlignment="Left" Margin="478,476,0,0" VerticalAlignment="Top" Width="75" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" Height="30" Click="Button_exit3_Click"/>
         <Button x:Name="Button_backtomain2" Content="Go Back" HorizontalAlignment="Left" Margin="30,476,0,0" VerticalAlignment="Top" Width="75" FontFamily="Trebuchet MS" Foreground="White" Background="#FF878484" Height="30" Click="Button_backtomain2_Click"/>
-
-
     </Grid>
 </Window>

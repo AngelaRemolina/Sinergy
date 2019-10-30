@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Entorno_visual"
         mc:Ignorable="d"
-        Title="Upload Your Content" Height="709.5" Width="1100">
+        Title="Upload Your Content" Height="547.056" Width="1073.722">
     <Grid>
         <Grid.ColumnDefinitions>
 
         </Grid.ColumnDefinitions>
         <Image Source="backgroundUpload.jpg" Stretch="Fill"/>
-        <Button x:Name="back_button" Content="Go Back" HorizontalAlignment="Left" Margin="33,625,0,0" VerticalAlignment="Top" Width="102" Click="back_button_Click" Height="28"/>
-        <Button x:Name="exit_button" Content="Exit" HorizontalAlignment="Left" Margin="956,625,0,0" VerticalAlignment="Top" Width="102" Click="Exit_button_Click" Height="28"/>
+        <Button x:Name="back_button" Content="Go Back" HorizontalAlignment="Left" Margin="33,457,0,0" VerticalAlignment="Top" Width="102" Click="back_button_Click" Height="28"/>
+        <Button x:Name="exit_button" Content="Exit" HorizontalAlignment="Left" Margin="956,457,0,0" VerticalAlignment="Top" Width="102" Click="Exit_button_Click" Height="28"/>
         <Label Content="Release name:" HorizontalAlignment="Left" Margin="33,117,0,0" VerticalAlignment="Top" Width="150" Foreground="White" Height="31" FontSize="13"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="33,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
         <Label Content="Artist Name" HorizontalAlignment="Left" Margin="33,171,0,0" VerticalAlignment="Top" Height="27" Width="150" FontSize="13" Foreground="White"/>
@@ -25,13 +25,36 @@
             <ComboBoxItem Content="$ 0.99" HorizontalAlignment="Left" Width="148"/>
             <ComboBoxItem Content="$ 1.28" HorizontalAlignment="Left" Width="148"/>
         </ComboBox>
-        <Label Content="ALBUM INFORMATION" HorizontalAlignment="Left" Margin="410,30,0,0" VerticalAlignment="Top" Height="58" Width="284" FontSize="25" Foreground="White" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="410,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <Label Content="Copyright" HorizontalAlignment="Left" Margin="410,117,0,0" VerticalAlignment="Top" Height="31" Width="150" FontSize="13" Foreground="White"/>
-        <Label Content="Release date" HorizontalAlignment="Left" Margin="410,172,0,0" VerticalAlignment="Top" Width="150" Foreground="White" FontSize="13"/>
-        <DatePicker HorizontalAlignment="Left" Margin="410,203,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label Content="Pre-order date" HorizontalAlignment="Left" Margin="410,232,0,0" VerticalAlignment="Top" Width="150" Foreground="White"/>
-        <DatePicker HorizontalAlignment="Left" Margin="410,258,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label Content="ALBUM INFORMATION" HorizontalAlignment="Left" Margin="137,27,0,0" VerticalAlignment="Top" Height="58" Width="284" FontSize="25" Foreground="White" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="289,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Copyright" HorizontalAlignment="Left" Margin="289,117,0,0" VerticalAlignment="Top" Height="31" Width="150" FontSize="13" Foreground="White"/>
+        <Label Content="Release date" HorizontalAlignment="Left" Margin="289,172,0,0" VerticalAlignment="Top" Width="150" Foreground="White" FontSize="13"/>
+        <DatePicker HorizontalAlignment="Left" Margin="289,203,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label Content="Pre-order date" HorizontalAlignment="Left" Margin="289,232,0,0" VerticalAlignment="Top" Width="150" Foreground="White"/>
+        <DatePicker HorizontalAlignment="Left" Margin="289,258,0,0" VerticalAlignment="Top" Width="150"/>
+        <Label Content="STORES &amp; COUNTRIES" HorizontalAlignment="Left" Margin="675,27,0,0" VerticalAlignment="Top" Height="58" Width="307" FontSize="25" Foreground="White" FontWeight="Bold"/>
+        <ComboBox x:Name="Country_Combo" HorizontalAlignment="Left" Margin="657,153,0,0" VerticalAlignment="Top" Width="150">
+            <ComboBoxItem Content="All" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <Label Content="Countries" HorizontalAlignment="Left" Margin="657,117,0,0" VerticalAlignment="Top" Foreground="White" Width="120" Height="31" FontSize="13"/>
+        <Label Content="Stores" HorizontalAlignment="Left" Margin="657,175,0,0" VerticalAlignment="Top" Width="150" Height="24" Foreground="White" FontSize="13"/>
+        <ComboBox HorizontalAlignment="Left" Margin="657,204,0,0" VerticalAlignment="Top" Width="150">
+            <ComboBoxItem Content="All" HorizontalAlignment="Left" Width="148"/>
+            <ComboBoxItem Content="Spotify" HorizontalAlignment="Left" Width="148"/>
+            <ComboBoxItem Content="iTunes" HorizontalAlignment="Left" Width="148"/>
+            <ComboBoxItem Content="YouTube Music" HorizontalAlignment="Left" Width="148"/>
+            <ComboBoxItem Content="YouTube Content ID" HorizontalAlignment="Left" Width="148"/>
+            <ComboBoxItem Content="BeatPort" HorizontalAlignment="Left" Width="148"/>
+            <ComboBoxItem Content="Deezer" HorizontalAlignment="Left" Width="148"/>
+            <ComboBoxItem Content="Yandex" HorizontalAlignment="Left" Width="148"/>
+        </ComboBox>
+        <Label Content="Trype" HorizontalAlignment="Left" Margin="289,288,0,0" VerticalAlignment="Top" Height="29" Width="150" FontSize="13" Foreground="White"/>
+        <ComboBox HorizontalAlignment="Left" Margin="289,317,0,0" VerticalAlignment="Top" Width="150" Height="23">
+            <ComboBoxItem Content="Single" HorizontalAlignment="Left" Width="148"/>
+            <ComboBoxItem Content="EP" HorizontalAlignment="Left" Width="148"/>
+            <ComboBoxItem Content="Album" HorizontalAlignment="Left" Width="148"/>
+        </ComboBox>
+        <Button x:Name="submit_button" Content="Submit" HorizontalAlignment="Left" Margin="500,422,0,0" VerticalAlignment="Top" Width="85" Click="submit_button_Click"/>
 
 
     </Grid>
